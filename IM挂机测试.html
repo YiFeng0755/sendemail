@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>测试报告</title>
+<h1>Report</h1>
+<h4>2018/11/12 19:34:49.31</h4>
+<h4>Android</h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+</head>
+<body>
+<table border="1.5"
+<tr><th> 序号 </th>
+<th> 接口名 </th>
+<th> 用例名 </th>
+<th> 测试结果 </th>
+<th> 备注 </th>
+</tr>
+<tr><td>1</td><td>JoinChatRoom</td><td>未登录加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>2</td><td>SendTextMessage</td><td>未登录发世界消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>3</td><td>SendCustomMessage</td><td>未登录发自定义消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>4</td><td>SendTextMessage</td><td>未登录发文本私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>5</td><td>GetCurrentLocation</td><td>未登录获取地理位置</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>6</td><td>GetNearbyObjects</td><td>未登录获取最近联系人</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>7</td><td>BlockUser</td><td>未登录，屏蔽其他用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>8</td><td>GetUserInfo</td><td>未登录，获取用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>9</td><td>GetRecentContacts</td><td>未登录，获取用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>10</td><td>SendAudioMessage</td><td>未登录，开始录制语音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>11</td><td>DeleteSpecifiedHistoryMessage</td><td>未登录，删除指定消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>12</td><td>SendFile</td><td>未登录，发送文件</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>13</td><td>SendGift</td><td>未登录，发送文件</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>14</td><td>Login</td><td>用户登录:用户名为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>15</td><td>Login</td><td>用户登录</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>16</td><td>登录成功回调</td><td>登录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>17</td><td>JoinChatRoom</td><td>加入房间:房间名为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>18</td><td>JoinChatRoom</td><td>加入房间:房间名为特殊字符</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>19</td><td>JoinChatRoom</td><td>加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>20</td><td>OnJoinChatRoom</td><td>加入房间回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>21</td><td>DeleteSpecifiedHistoryMessage</td><td>删除指定用户的私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>22</td><td>DeleteSpecifiedHistoryMessage</td><td>删除指定用户指定的序列号的私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>23</td><td>SendTextMessage</td><td>发送消息，文本私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>24</td><td>OnJoinChatRoom</td><td>加入房间回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>25</td><td>回调成功</td><td>发送消息，文本私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>26</td><td>SendTextMessage</td><td>发送消息，文本世界频道消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>27</td><td>回调超时</td><td>发送消息，文本世界频道消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>28</td><td>SendTextMessage</td><td>发送空文本</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>29</td><td>SendTextMessage</td><td>房间ID为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>30</td><td>SendTextMessage</td><td>发送消息，文本世界频道消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>31</td><td>消息未确认接收</td><td>发送消息，文本世界频道带引号的消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>32</td><td>SendTextMessage</td><td>发送消息，随机长度文本世界频道消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>33</td><td>消息未确认接收</td><td>发送消息，随机长度文本世界频道消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>34</td><td>SendTextMessage</td><td>发送消息，敏感文本世界频道消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>35</td><td>回调超时</td><td>发送消息，敏感文本世界频道消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>36</td><td>SendTextMessage</td><td>发送大段消息，1200个中文字符</td><td>	[        <font color="green">OK</font>           ]</td><td>长文本不得超过512字符</td></tr>
+<tr><td>37</td><td>SendCustomMessage</td><td>世界频道自定义消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>38</td><td>回调超时</td><td>世界频道自定义消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>39</td><td>SendCustomMessage</td><td>发送自定义消息, 私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>40</td><td>回调超时</td><td>发送自定义消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>41</td><td>SendCustomMessage</td><td>发送自定义消息， 截取字节为临界值2048</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>42</td><td>回调超时</td><td>发送自定义消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>43</td><td>SendCustomMessage</td><td>发送自定义消息，截取长度比原文本数大</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>44</td><td>回调超时</td><td>发送自定义消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>45</td><td>SendCustomMessage</td><td>发送自定义消息, 字节数传入-1</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>46</td><td>SendCustomMessage</td><td>发送自定义消息， 房间号传入空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>47</td><td>SendCustomMessage</td><td>发送自定义消息， 内容传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>48</td><td>SendCustomMessage</td><td>发送自定义消息， 内容传入空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>49</td><td>SendGift</td><td>发送礼物消息，内容是不合法的json字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>50</td><td>SendGift</td><td>发送礼物消息，内容是空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>51</td><td>SendGift</td><td>发送礼物消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>52</td><td>回调超时</td><td>发送礼物消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>53</td><td>SendFile</td><td>发送文件，exparam是数字</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>54</td><td>SendFile</td><td>发送文件，文件路径为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>55</td><td>SendFile</td><td>发送文件，expparam为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>56</td><td>MultiSendTextMessage</td><td>多用户群发消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>57</td><td>回调超时</td><td>多用户群发消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>58</td><td>MultiSendTextMessage</td><td>群发接口异常参数验证, 群发数组为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>59</td><td>MultiSendTextMessage</td><td>群发接口异常参数验证, 发送空文本</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>60</td><td>QueryHistoryMessage</td><td>查询历史消息，向后查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>61</td><td>QueryHistoryMessage回调</td><td>查询历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>62</td><td>回调成功</td><td>查询用户历史消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>63</td><td>QueryHistoryMessage</td><td>查询历史消息，向前查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>64</td><td>QueryHistoryMessage回调</td><td>查询历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>65</td><td>回调成功</td><td>查询用户历史消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>66</td><td>QueryHistoryMessage</td><td>查询历史消息，向前查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>67</td><td>QueryHistoryMessage回调</td><td>查询历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>68</td><td>回调成功</td><td>查询用户历史消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>69</td><td>QueryHistoryMessage</td><td>查询历史消息，私聊方式，向前查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>70</td><td>QueryHistoryMessage回调</td><td>查询历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>71</td><td>回调成功</td><td>查询用户历史消息，私聊方式，向前查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>72</td><td>QueryHistoryMessage</td><td>查询房间，目标用户传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>73</td><td>QueryHistoryMessage</td><td>查询房间，目标ID为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>74</td><td>QueryRoomHistoryFromserver</td><td>查询房间历史消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>75</td><td>QueryRoomHistoryFromServer回调</td><td>查询房间历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td>RoomID is 2019899</td></tr>
+<tr><td>76</td><td>QueryRoomHistoryMessageFromServer</td><td>房间历史消息内容</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>77</td><td>QueryRoomHistoryMessageFromServer</td><td>房间历史消息内容</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>78</td><td>QueryRoomHistoryMessageFromServer</td><td>房间历史消息内容</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>79</td><td>回调成功</td><td>查询房间历史消息，向后查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>80</td><td>QueryRoomHistoryFromserver</td><td>查询房间历史消息，参数roomid传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>81</td><td>DeleteHistoryMessage</td><td>删除历史消息，群发，截止到当前时刻</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>82</td><td>DeleteHistoryMessage</td><td>删除历史消息， 未知聊天类型，截止到当前时刻</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>83</td><td>DeleteHistoryMessage</td><td>删除历史消息, 房间维度，截止到当前时间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>84</td><td>DeleteHistoryMessage</td><td>删除历史消息, 房间维度，时刻为0</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>85</td><td>SetUserInfo</td><td>设置用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>86</td><td>GetUserInfo</td><td>获取用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>87</td><td>OnGetUserInfo回调</td><td>获取用户信息成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>88</td><td>GetUserInfo</td><td>用户名校验</td><td>	[        <font color="green">OK</font>           ]</td><td>UserID:David</td></tr>
+<tr><td>89</td><td>回调成功</td><td>读写用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>90</td><td>GetRecentContacts</td><td>获取最近联系人</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>91</td><td>SetReceiveMessageSwitch</td><td>设置收动拉取消息：是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>92</td><td>SendTextMessage</td><td>发送手动拉取消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>93</td><td>回调超时</td><td>手动拉取消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>94</td><td>TranslateText</td><td>翻译文本</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>95</td><td>TranslateText</td><td>文本翻译完成</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 0, But actual is 9</td><td></td></tr>
+<tr><td>96</td><td>回调成功</td><td>文本翻译</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>97</td><td>GetRoomMemberCount</td><td>获取房间人数</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>98</td><td>OnGetRoomMemberCount</td><td>获取房间成员数量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>99</td><td>OnGetRoomMemberCount</td><td>房间人数数量至少为1</td><td>	[        <font color="green">OK</font>           ]</td><td>Number is 1</td></tr>
+<tr><td>100</td><td>回调成功</td><td>获取房间人数回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>101</td><td>BlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>102</td><td>OnBlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td>user AutoRoboter is block</td></tr>
+<tr><td>103</td><td>回调成功</td><td>屏蔽用户回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>104</td><td>GetBlockUsers</td><td>获取被屏蔽的用户数量</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>105</td><td>OnGetBlockUsers</td><td>获取被屏蔽的所有的用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>106</td><td>回调成功</td><td>获取被屏蔽的用户数量</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>107</td><td>BlockUser</td><td>解除屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>108</td><td>OnBlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td>user AutoRoboter is unblock</td></tr>
+<tr><td>109</td><td>回调成功</td><td>解除屏蔽用户回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>110</td><td>BlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>111</td><td>OnBlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td>user AutoRoboter is block</td></tr>
+<tr><td>112</td><td>回调成功</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>113</td><td>UnBlockAllUser</td><td>解除所有屏蔽的用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>114</td><td>OnUnBlockAllUser</td><td>解除屏蔽所有的用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>115</td><td>回调成功</td><td>解除所有被屏蔽用户回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>116</td><td>SendAudioMessage</td><td>不带翻译的录音 公聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>117</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>118</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>119</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>120</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>121</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>122</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>123</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>124</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>125</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>126</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>127</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>128</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>129</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>130</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>131</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>132</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>133</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>134</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>135</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>136</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>137</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>138</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>139</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>140</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>141</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>142</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>143</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>144</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>145</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>146</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>147</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>148</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>149</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>150</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>151</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>152</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>153</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>154</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>155</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>156</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>157</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>158</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>159</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>160</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>161</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>162</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>163</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>164</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>165</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>166</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>167</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>168</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>169</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>170</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>171</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>172</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>173</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>174</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>175</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>176</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>177</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>178</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>179</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>180</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>181</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>182</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>183</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>184</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>185</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>186</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>187</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>188</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>189</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>190</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>191</td><td>StopAudioMessage</td><td>不带翻译的录音 公聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>192</td><td>OnStartSendAudioMessage</td><td>停止语音录制回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>193</td><td>SendOnlyAudioMessage</td><td>录制带翻译的语音，私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>194</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>195</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>196</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>197</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>198</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>199</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>200</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>201</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>202</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>203</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>204</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>205</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>206</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>207</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>208</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>209</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>210</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>211</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>212</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>213</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>214</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>215</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>216</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>217</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>218</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>219</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>220</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>221</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>222</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>223</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>224</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>225</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>226</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>227</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>228</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>229</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>230</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>231</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>232</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>233</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>234</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>235</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>236</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>237</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>238</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>239</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>240</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>241</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>242</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>243</td><td>StopAudioMessage</td><td>停止录音并发送，带翻译，私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>244</td><td>SendOnlyAudioMessage</td><td>录制不带翻译的语音消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 0, But actual is 2007</td><td></td></tr>
+<tr><td>245</td><td>OnStartSendAudioMessage</td><td>停止语音录制回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>246</td><td>SendOnlyAudioMessage</td><td>停止录制不带翻译的语音消息并发送出去</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 0, But actual is 2005</td><td></td></tr>
+<tr><td>247</td><td>SendOnlyAudioMessage</td><td>录制不带翻译的语音消息，私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>248</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>249</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>250</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>251</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>252</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>253</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>254</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>255</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>256</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>257</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>258</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>259</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>260</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>261</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>262</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>263</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>264</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>265</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>266</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>267</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>268</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>269</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>270</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>271</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>272</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>273</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>274</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>275</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>276</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>277</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>278</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>279</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>280</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>281</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>282</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>283</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>284</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>285</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>286</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>287</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>288</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>289</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>290</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>291</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>292</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>293</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>294</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>295</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>296</td><td>StopAudioMessage</td><td>录制不带翻译的语音消息，停止录制并发送，私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>297</td><td>OnStartSendAudioMessage</td><td>停止语音录制回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>298</td><td>SendAudioMessage</td><td>启动录音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>299</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>300</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>301</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>302</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>303</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>304</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>305</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>306</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>307</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>308</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>309</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>310</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>311</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>312</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>313</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>314</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>315</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>316</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>317</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>318</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>319</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>320</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>321</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>322</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>323</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>324</td><td>CancleAudioMessage</td><td>取消录音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>325</td><td>Accusation</td><td>举报用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>326</td><td>LeaveChatRoom</td><td>退出房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>327</td><td>OnLeaveChatRoom回调</td><td>离开房间回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>328</td><td>回调成功</td><td>退出房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>329</td><td>Logout</td><td>登出</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>330</td><td>Logout回调</td><td>退出登录</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>331</td><td>回调成功</td><td>退出登录</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+</table>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>测试报告</title>
+<h1>Report</h1>
+<h4>2018/11/12 19:41:31.338</h4>
+<h4>Android</h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+</head>
+<body>
+<table border="1.5"
+<tr><th> 序号 </th>
+<th> 接口名 </th>
+<th> 用例名 </th>
+<th> 测试结果 </th>
+<th> 备注 </th>
+</tr>
+<tr><td>1</td><td>JoinChatRoom</td><td>未登录加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>2</td><td>SendTextMessage</td><td>未登录发世界消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>3</td><td>SendCustomMessage</td><td>未登录发自定义消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>4</td><td>SendTextMessage</td><td>未登录发文本私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>5</td><td>GetCurrentLocation</td><td>未登录获取地理位置</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>6</td><td>GetNearbyObjects</td><td>未登录获取最近联系人</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>7</td><td>BlockUser</td><td>未登录，屏蔽其他用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>8</td><td>GetUserInfo</td><td>未登录，获取用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>9</td><td>GetRecentContacts</td><td>未登录，获取用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>10</td><td>SendAudioMessage</td><td>未登录，开始录制语音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>11</td><td>DeleteSpecifiedHistoryMessage</td><td>未登录，删除指定消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>12</td><td>SendFile</td><td>未登录，发送文件</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>13</td><td>SendGift</td><td>未登录，发送文件</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>14</td><td>Login</td><td>用户登录:用户名为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>15</td><td>Login</td><td>用户登录</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>16</td><td>登录成功回调</td><td>登录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>17</td><td>JoinChatRoom</td><td>加入房间:房间名为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>18</td><td>JoinChatRoom</td><td>加入房间:房间名为特殊字符</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>19</td><td>JoinChatRoom</td><td>加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>20</td><td>OnJoinChatRoom</td><td>加入房间回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>21</td><td>DeleteSpecifiedHistoryMessage</td><td>删除指定用户的私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>22</td><td>OnJoinChatRoom</td><td>加入房间回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>23</td><td>DeleteSpecifiedHistoryMessage</td><td>删除指定用户指定的序列号的私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>24</td><td>SendTextMessage</td><td>发送消息，文本私聊消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>25</td><td>回调超时</td><td>发送消息，文本私聊消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>26</td><td>SendTextMessage</td><td>发送消息，文本世界频道消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>27</td><td>回调超时</td><td>发送消息，文本世界频道消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>28</td><td>SendTextMessage</td><td>发送空文本</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>29</td><td>SendTextMessage</td><td>房间ID为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>30</td><td>SendTextMessage</td><td>发送消息，文本世界频道消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>31</td><td>消息未确认接收</td><td>发送消息，文本世界频道带引号的消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>32</td><td>SendTextMessage</td><td>发送消息，随机长度文本世界频道消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>33</td><td>消息未确认接收</td><td>发送消息，随机长度文本世界频道消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>34</td><td>SendTextMessage</td><td>发送消息，敏感文本世界频道消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>35</td><td>回调超时</td><td>发送消息，敏感文本世界频道消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>36</td><td>SendTextMessage</td><td>发送大段消息，1200个中文字符</td><td>	[        <font color="green">OK</font>           ]</td><td>长文本不得超过512字符</td></tr>
+<tr><td>37</td><td>SendCustomMessage</td><td>世界频道自定义消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>38</td><td>回调超时</td><td>世界频道自定义消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>39</td><td>SendCustomMessage</td><td>发送自定义消息, 私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>40</td><td>回调超时</td><td>发送自定义消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>41</td><td>SendCustomMessage</td><td>发送自定义消息， 截取字节为临界值2048</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>42</td><td>回调超时</td><td>发送自定义消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>43</td><td>SendCustomMessage</td><td>发送自定义消息，截取长度比原文本数大</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>44</td><td>回调超时</td><td>发送自定义消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>45</td><td>SendCustomMessage</td><td>发送自定义消息, 字节数传入-1</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>46</td><td>SendCustomMessage</td><td>发送自定义消息， 房间号传入空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>47</td><td>SendCustomMessage</td><td>发送自定义消息， 内容传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>48</td><td>SendCustomMessage</td><td>发送自定义消息， 内容传入空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>49</td><td>SendGift</td><td>发送礼物消息，内容是不合法的json字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>50</td><td>SendGift</td><td>发送礼物消息，内容是空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>51</td><td>SendGift</td><td>发送礼物消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>52</td><td>回调超时</td><td>发送礼物消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>53</td><td>SendFile</td><td>发送文件，exparam是数字</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>54</td><td>SendFile</td><td>发送文件，文件路径为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>55</td><td>SendFile</td><td>发送文件，expparam为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>56</td><td>MultiSendTextMessage</td><td>多用户群发消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>57</td><td>回调超时</td><td>多用户群发消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>58</td><td>MultiSendTextMessage</td><td>群发接口异常参数验证, 群发数组为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>59</td><td>MultiSendTextMessage</td><td>群发接口异常参数验证, 发送空文本</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>60</td><td>QueryHistoryMessage</td><td>查询历史消息，向后查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>61</td><td>QueryHistoryMessage回调</td><td>查询历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>62</td><td>回调成功</td><td>查询用户历史消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>63</td><td>QueryHistoryMessage</td><td>查询历史消息，向前查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>64</td><td>QueryHistoryMessage回调</td><td>查询历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>65</td><td>回调成功</td><td>查询用户历史消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>66</td><td>QueryHistoryMessage</td><td>查询历史消息，向前查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>67</td><td>QueryHistoryMessage回调</td><td>查询历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>68</td><td>回调成功</td><td>查询用户历史消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>69</td><td>QueryHistoryMessage</td><td>查询历史消息，私聊方式，向前查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>70</td><td>QueryHistoryMessage回调</td><td>查询历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>71</td><td>回调成功</td><td>查询用户历史消息，私聊方式，向前查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>72</td><td>QueryHistoryMessage</td><td>查询房间，目标用户传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>73</td><td>QueryHistoryMessage</td><td>查询房间，目标ID为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>74</td><td>QueryRoomHistoryFromserver</td><td>查询房间历史消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>75</td><td>QueryRoomHistoryFromServer回调</td><td>查询房间历史消息记录成功</td><td>	[        <font color="green">OK</font>           ]</td><td>RoomID is 2019899</td></tr>
+<tr><td>76</td><td>QueryRoomHistoryMessageFromServer</td><td>房间历史消息内容</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>77</td><td>QueryRoomHistoryMessageFromServer</td><td>房间历史消息内容</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>78</td><td>QueryRoomHistoryMessageFromServer</td><td>房间历史消息内容</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>79</td><td>回调成功</td><td>查询房间历史消息，向后查找</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>80</td><td>QueryRoomHistoryFromserver</td><td>查询房间历史消息，参数roomid传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>81</td><td>DeleteHistoryMessage</td><td>删除历史消息，群发，截止到当前时刻</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>82</td><td>DeleteHistoryMessage</td><td>删除历史消息， 未知聊天类型，截止到当前时刻</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>83</td><td>DeleteHistoryMessage</td><td>删除历史消息, 房间维度，截止到当前时间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>84</td><td>DeleteHistoryMessage</td><td>删除历史消息, 房间维度，时刻为0</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>85</td><td>SetUserInfo</td><td>设置用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>86</td><td>GetUserInfo</td><td>获取用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>87</td><td>OnGetUserInfo回调</td><td>获取用户信息成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>88</td><td>GetUserInfo</td><td>用户名校验</td><td>	[        <font color="green">OK</font>           ]</td><td>UserID:David</td></tr>
+<tr><td>89</td><td>回调成功</td><td>读写用户信息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>90</td><td>GetRecentContacts</td><td>获取最近联系人</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>91</td><td>SetReceiveMessageSwitch</td><td>设置收动拉取消息：是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>92</td><td>SendTextMessage</td><td>发送手动拉取消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>93</td><td>回调超时</td><td>手动拉取消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>94</td><td>TranslateText</td><td>翻译文本</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>95</td><td>TranslateText</td><td>文本翻译完成</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 0, But actual is 9</td><td></td></tr>
+<tr><td>96</td><td>回调成功</td><td>文本翻译</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>97</td><td>GetRoomMemberCount</td><td>获取房间人数</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>98</td><td>OnGetRoomMemberCount</td><td>获取房间成员数量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>99</td><td>OnGetRoomMemberCount</td><td>房间人数数量至少为1</td><td>	[        <font color="green">OK</font>           ]</td><td>Number is 1</td></tr>
+<tr><td>100</td><td>回调成功</td><td>获取房间人数回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>101</td><td>BlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>102</td><td>OnBlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td>user AutoRoboter is block</td></tr>
+<tr><td>103</td><td>回调成功</td><td>屏蔽用户回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>104</td><td>GetBlockUsers</td><td>获取被屏蔽的用户数量</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>105</td><td>OnGetBlockUsers</td><td>获取被屏蔽的所有的用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>106</td><td>回调成功</td><td>获取被屏蔽的用户数量</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>107</td><td>BlockUser</td><td>解除屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>108</td><td>OnBlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td>user AutoRoboter is unblock</td></tr>
+<tr><td>109</td><td>回调成功</td><td>解除屏蔽用户回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>110</td><td>BlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>111</td><td>OnBlockUser</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td>user AutoRoboter is block</td></tr>
+<tr><td>112</td><td>回调成功</td><td>屏蔽用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>113</td><td>UnBlockAllUser</td><td>解除所有屏蔽的用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>114</td><td>OnUnBlockAllUser</td><td>解除屏蔽所有的用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>115</td><td>回调成功</td><td>解除所有被屏蔽用户回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>116</td><td>SendAudioMessage</td><td>不带翻译的录音 公聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>117</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>118</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>119</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>120</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>121</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>122</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>123</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>124</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>125</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>126</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>127</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>128</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>129</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>130</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>131</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>132</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>133</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>134</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>135</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>136</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>137</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>138</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>139</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>140</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>141</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>142</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>143</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>144</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>145</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>146</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>147</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>148</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>149</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>150</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>151</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>152</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>153</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>154</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>155</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>156</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>157</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>158</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>159</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>160</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>161</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>162</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>163</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>164</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>165</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>166</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>167</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>168</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>169</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>170</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>171</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>172</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>173</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>174</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>175</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>176</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>177</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>178</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>179</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>180</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>181</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>182</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>183</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>184</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>185</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>186</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>187</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>188</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>189</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>190</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>191</td><td>StopAudioMessage</td><td>不带翻译的录音 公聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>192</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>193</td><td>OnStartSendAudioMessage</td><td>停止语音录制回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>194</td><td>SendOnlyAudioMessage</td><td>录制带翻译的语音，私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>195</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>196</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>197</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>198</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>199</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>200</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>201</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>202</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>203</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>204</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>205</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>206</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>207</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>208</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>209</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>210</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>211</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>212</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>213</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>214</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>215</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>216</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>217</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>218</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>219</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>220</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>221</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>222</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>223</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>224</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>225</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>226</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>227</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>228</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>229</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>230</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>231</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>232</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>233</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>234</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>235</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>236</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>237</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>238</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>239</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>240</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>241</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>242</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>243</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>244</td><td>StopAudioMessage</td><td>停止录音并发送，带翻译，私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>245</td><td>SendOnlyAudioMessage</td><td>录制不带翻译的语音消息</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 0, But actual is 2007</td><td></td></tr>
+<tr><td>246</td><td>SendOnlyAudioMessage</td><td>停止录制不带翻译的语音消息并发送出去</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>247</td><td>OnStartSendAudioMessage</td><td>停止语音录制回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>248</td><td>SendOnlyAudioMessage</td><td>录制不带翻译的语音消息，私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>249</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>250</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>251</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>252</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>253</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>254</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>255</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>256</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>257</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>258</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>259</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>260</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>261</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>262</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>263</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>264</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>265</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>266</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>267</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>268</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>269</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>270</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>271</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>272</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>273</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>274</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>275</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>276</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>277</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>278</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>279</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>280</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>281</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>282</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>283</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>284</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>285</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>286</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>287</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>288</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>289</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>290</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>291</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>292</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>293</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>294</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>295</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>296</td><td>StopAudioMessage</td><td>录制不带翻译的语音消息，停止录制并发送，私聊</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>297</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>298</td><td>OnStartSendAudioMessage</td><td>停止语音录制回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>299</td><td>SendAudioMessage</td><td>启动录音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>300</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>301</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>302</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>303</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>304</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>305</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>306</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>307</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>308</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>309</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>310</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>311</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>312</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>313</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>314</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>315</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>316</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>317</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>318</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>319</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>320</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>321</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>322</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>323</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>324</td><td>OnRecordVolumeChange</td><td>录音音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>325</td><td>CancleAudioMessage</td><td>取消录音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>326</td><td>Accusation</td><td>举报用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>327</td><td>LeaveChatRoom</td><td>退出房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>328</td><td>OnLeaveChatRoom回调</td><td>离开房间回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>329</td><td>回调成功</td><td>退出房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>330</td><td>Logout</td><td>登出</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>331</td><td>Logout回调</td><td>退出登录</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>332</td><td>回调成功</td><td>退出登录</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+</table>
+</body>

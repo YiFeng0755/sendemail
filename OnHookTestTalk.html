@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>测试报告</title>
+<h1>Report</h1>
+<h4>2018/11/09 13:5:47.151</h4>
+<h4>Android</h4>
+<h4>sysver:6.0.1
+</h4>
+<h4>ffmpeg-support:1
+</h4>
+<h4></h4>
+<h4>Brand:360
+</h4>
+<h4>sdkver:trunk-2.6.0.4884
+</h4>
+<h4>CPU:armeabi-v7a
+</h4>
+<h4>Model:1605-A01
+</h4>
+</head>
+<body>
+<table border="1.5"
+<tr><th> 序号 </th>
+<th> 接口名 </th>
+<th> 用例名 </th>
+<th> 测试结果 </th>
+<th> 备注 </th>
+</tr>
+<tr><td>1</td><td>unInit</td><td>反初始化</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>2</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>3</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>4</td><td>isInited</td><td>是否已经初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>5</td><td>joinChannelSingleMode</td><td>以自由角色、单频道模式加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>6</td><td>isInChannel</td><td>单频道模式查询是否在房间中，是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>7</td><td>getChannelUserList</td><td>单频道模式查询用户列表</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>8</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>9</td><td>setUserRole</td><td>设置用户说话时的角色</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>10</td><td>getUserRole</td><td>获取用户说话时的角色</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>11</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>12</td><td>leaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>13</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>14</td><td>joinChannelSingleMode</td><td>以主播模式加入单个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>15</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>16</td><td>leaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>17</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>18</td><td>joinChannelSingleMode</td><td>加入单个房间，用户参数传入空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>19</td><td>joinChannelSingleMode</td><td>加入单个房间，用户参数传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>20</td><td>joinChannelSingleMode</td><td>加入单个房间，房间参数传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>21</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>22</td><td>getSpeakerMute</td><td>获取静音状态,关闭扬声器</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>23</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>24</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>25</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>26</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_ON</td><td>我方扬声器打开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>27</td><td>getSpeakerMute</td><td>设置静音状态，打开扬声器</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>28</td><td>setOutputToSpeaker</td><td>设置是否输出到扬声器:否</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>29</td><td>setOutputToSpeaker</td><td>设置是否输出到扬声器：是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>30</td><td>setMicrophoneMute</td><td>麦克风控制：关闭麦克风</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>31</td><td>setMicrophoneMute</td><td>麦克风控制：打开麦克风</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>32</td><td>setVolume</td><td>音量控制：设置音量为0，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>33</td><td>setVolume</td><td>音量控制：设置音量为100，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>34</td><td>setVolume</td><td>音量控制：设置音量为45，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>35</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>36</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>37</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>38</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>39</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>40</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>41</td><td>setAutoSendStatus</td><td>设置是否通知其他人自己的开关麦克风和扬声器的状态:是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>42</td><td>setAutoSendStatus</td><td>设置是否通知其他人自己的开关麦克风和扬声器的状态:否</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>43</td><td>setUseMobileNetworkEnabled</td><td>启用移动网络</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>44</td><td>getUseMobileNetworkEnabled</td><td>获取移动网络状态，开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>45</td><td>setUseMobileNetworkEnabled</td><td>禁用移动网络</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>46</td><td>getUseMobileNetworkEnabled</td><td>获取移动网络状态，关</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>47</td><td>pauseChannel</td><td>通话控制：暂停通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>48</td><td>回调:YOUME_EVENT_PAUSED</td><td>停止通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>49</td><td>resumeChannel</td><td>通话控制：恢复通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>50</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_ON</td><td>我方扬声器打开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>51</td><td>回调：YOUME_EVENT_RESUMED</td><td>恢复通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>52</td><td>playBackgroundMusic</td><td>背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>53</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>54</td><td>playingBackgroundMusic</td><td>背景音乐播放,正在播放</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>55</td><td>setBackgroundMusicVolume</td><td>设置背景音乐音量</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>56</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>57</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>58</td><td>回调:YOUME_EVENT_BGM_FAILED</td><td>背景音乐播放失败</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is -102, But actual is 0</td><td></td></tr>
+<tr><td>59</td><td>pauseBackgroundMusic</td><td>暂停背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>60</td><td>noplayingBackgroundMusic</td><td>背景音乐播放,没有播放</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 0, But actual is 1</td><td></td></tr>
+<tr><td>61</td><td>resumeBackgroundMusic</td><td>恢复背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>62</td><td>stopBackgroundMusic</td><td>停止背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>63</td><td>setHeadsetMonitorOn</td><td>监听控制:监听麦克风，监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>64</td><td>setHeadsetMonitorOn</td><td>监听控制：不监听麦克风，监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>65</td><td>setHeadsetMonitorOn</td><td>监听控制：不监听麦克风，不监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>66</td><td>setHeadsetMonitorOn</td><td>监听控制：监听麦克风，不监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>67</td><td>setReverbEnabled</td><td>开启主播混响模式</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>68</td><td>setReverbEnabled</td><td>关闭主播混响模式</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>69</td><td>setVadCallbackEnabled</td><td>开启语音检测回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>70</td><td>setVadCallbackEnabled</td><td>关闭语音检测回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>71</td><td>setMicLevelCallback</td><td>开启讲话音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>72</td><td>setMicLevelCallback</td><td>关闭讲话音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>73</td><td>setReleaseMicWhenMute</td><td>麦克风静音时，释放麦克风设备</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>74</td><td>setReleaseMicWhenMute</td><td>麦克风静音时，不释放麦克风设备</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>75</td><td>pauseChannel</td><td>暂停通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>76</td><td>resumeChannel</td><td>恢复通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>77</td><td>getSoundtouchPitchSemiTones</td><td>获取变声音调</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 206</td><td></td></tr>
+<tr><td>78</td><td>setSoundtouchPitchSemiTones</td><td>设置变声音调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>79</td><td>setOtherMicMute</td><td>控制他人麦克风，让用户静音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>80</td><td>回调:YOUME_EVENT_PAUSED</td><td>停止通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>81</td><td>setOtherMicMute</td><td>控制他人麦克风，取消用户静音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>82</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>83</td><td>setOtherSpeakerMute</td><td>控制他人扬声器，屏蔽他人语音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>84</td><td>回调：YOUME_EVENT_RESUMED</td><td>恢复通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>85</td><td>setOtherMicMute</td><td>控制他人扬声器，取消屏蔽他人语音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>86</td><td>sendMessage</td><td>发出广播消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>87</td><td>setWhiteUserList</td><td>对频道设置白名单用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>88</td><td>releaseMicSync</td><td>同步完成麦克风释放,成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>89</td><td>resumeMicSync</td><td>恢复麦克风到释放前的状态,成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>90</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>91</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>92</td><td>joinChannelMultiMode</td><td>多频道主播模式下离开房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>93</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>94</td><td>leaveChannelMultiMode</td><td>多频道模式下离开房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>95</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>96</td><td>LeaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>97</td><td>回调:YOUME_EVENT_LEAVED_ONE</td><td>离开一个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>98</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>99</td><td>joinChannelMultiMode</td><td>多频道模式下加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>100</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>101</td><td>joinChannelMultiMode(cb)</td><td></td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>102</td><td>消息接收成功</td><td>多频道模式下加入房间【Callback】</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>103</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>104</td><td>joinChannelMultiMode</td><td>多频道模式下加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>105</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>106</td><td>消息接收成功</td><td>多频道模式下加入房间【Callback】</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>107</td><td>speakToChannel</td><td>多频道模式下，选择一个频道说话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>108</td><td>回调:YOUME_EVENT_SPEAK_SUCCESS</td><td>切换对指定频道讲话成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>109</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>110</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>111</td><td>joinChannelSingleMode</td><td>以主播模式加入单个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>112</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>113</td><td>setGrabMicOption</td><td>抢麦设置</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>114</td><td>startGrabMicAction</td><td>开始抢麦活动</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>115</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>116</td><td>stopGrabMicAction</td><td>停止抢麦活动</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>117</td><td>回调：YOUME_EVENT_GRABMIC_NOTIFY_START</td><td>抢麦活动开始</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>118</td><td>回调：YOUME_EVENT_GRABMIC_START_OK</td><td>抢麦活动开始</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>119</td><td>回调：YOUME_EVENT_GRABMIC_NOTIFY_STOP</td><td>抢麦活动结束</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>120</td><td>startGrabMicAction</td><td>发起抢麦请求, 抢麦成功后是自动开启麦克风权限</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>121</td><td>releaseGrabMic</td><td>释放麦</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>122</td><td>startGrabMicAction</td><td>发起抢麦请求, 抢麦成功后是不自动开启麦克风权限</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>123</td><td>setInviteMicOption</td><td>主播连麦设置,参数为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>124</td><td>setInviteMicOption</td><td>主播连麦设置</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>125</td><td>回调：YOUME_EVENT_GRABMIC_STOP_OK</td><td>抢麦活动停止</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>126</td><td>setInviteMicOption</td><td>主播连麦设置，waitTimeout=-1， maxTalkTime=-1</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>127</td><td>requestInviteMic</td><td>主播与用户发起连麦请求，房间等参数为空值</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>128</td><td>requestInviteMic</td><td>主播与用户发起连麦请求，房间等参数不为空值</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>129</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>130</td><td>responseInviteMic</td><td>主播应答连麦请求，参数为true，同意连麦</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>131</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>132</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>133</td><td>回调：YOUME_EVENT_INVITEMIC_CAN_TALK</td><td>双方可以通话了，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>134</td><td>stopInviteMic</td><td>停止连麦请求</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>135</td><td>回调：YOUME_EVENT_INVITEMIC_CANNOT_TALK</td><td>通话停止回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+</table>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>测试报告</title>
+<h1>Report</h1>
+<h4>2018/11/09 13:12:28.278</h4>
+<h4>Android</h4>
+<h4>sysver:6.0.1
+</h4>
+<h4>ffmpeg-support:1
+</h4>
+<h4></h4>
+<h4>Brand:360
+</h4>
+<h4>sdkver:trunk-2.6.0.4884
+</h4>
+<h4>CPU:armeabi-v7a
+</h4>
+<h4>Model:1605-A01
+</h4>
+</head>
+<body>
+<table border="1.5"
+<tr><th> 序号 </th>
+<th> 接口名 </th>
+<th> 用例名 </th>
+<th> 测试结果 </th>
+<th> 备注 </th>
+</tr>
+<tr><td>1</td><td>unInit</td><td>反初始化</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>2</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>3</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>4</td><td>isInited</td><td>是否已经初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>5</td><td>joinChannelSingleMode</td><td>以自由角色、单频道模式加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>6</td><td>isInChannel</td><td>单频道模式查询是否在房间中，是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>7</td><td>getChannelUserList</td><td>单频道模式查询用户列表</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>8</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>9</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>10</td><td>setUserRole</td><td>设置用户说话时的角色</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>11</td><td>getUserRole</td><td>获取用户说话时的角色</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>12</td><td>leaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>13</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>14</td><td>joinChannelSingleMode</td><td>以主播模式加入单个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>15</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>16</td><td>leaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>17</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>18</td><td>joinChannelSingleMode</td><td>加入单个房间，用户参数传入空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>19</td><td>joinChannelSingleMode</td><td>加入单个房间，用户参数传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>20</td><td>joinChannelSingleMode</td><td>加入单个房间，房间参数传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>21</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>22</td><td>getSpeakerMute</td><td>获取静音状态,关闭扬声器</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>23</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>24</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>25</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>26</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_ON</td><td>我方扬声器打开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>27</td><td>getSpeakerMute</td><td>设置静音状态，打开扬声器</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>28</td><td>setOutputToSpeaker</td><td>设置是否输出到扬声器:否</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>29</td><td>setOutputToSpeaker</td><td>设置是否输出到扬声器：是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>30</td><td>setMicrophoneMute</td><td>麦克风控制：关闭麦克风</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>31</td><td>setMicrophoneMute</td><td>麦克风控制：打开麦克风</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>32</td><td>setVolume</td><td>音量控制：设置音量为0，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>33</td><td>setVolume</td><td>音量控制：设置音量为100，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>34</td><td>setVolume</td><td>音量控制：设置音量为45，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>35</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>36</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>37</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>38</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>39</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>40</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>41</td><td>setAutoSendStatus</td><td>设置是否通知其他人自己的开关麦克风和扬声器的状态:是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>42</td><td>setAutoSendStatus</td><td>设置是否通知其他人自己的开关麦克风和扬声器的状态:否</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>43</td><td>setUseMobileNetworkEnabled</td><td>启用移动网络</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>44</td><td>getUseMobileNetworkEnabled</td><td>获取移动网络状态，开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>45</td><td>setUseMobileNetworkEnabled</td><td>禁用移动网络</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>46</td><td>getUseMobileNetworkEnabled</td><td>获取移动网络状态，关</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>47</td><td>pauseChannel</td><td>通话控制：暂停通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>48</td><td>回调:YOUME_EVENT_PAUSED</td><td>停止通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>49</td><td>resumeChannel</td><td>通话控制：恢复通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>50</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_ON</td><td>我方扬声器打开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>51</td><td>回调：YOUME_EVENT_RESUMED</td><td>恢复通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>52</td><td>playBackgroundMusic</td><td>背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>53</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>54</td><td>playingBackgroundMusic</td><td>背景音乐播放,正在播放</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>55</td><td>setBackgroundMusicVolume</td><td>设置背景音乐音量</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>56</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>57</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>58</td><td>回调:YOUME_EVENT_BGM_FAILED</td><td>背景音乐播放失败</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is -102, But actual is 0</td><td></td></tr>
+<tr><td>59</td><td>pauseBackgroundMusic</td><td>暂停背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>60</td><td>noplayingBackgroundMusic</td><td>背景音乐播放,没有播放</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 0, But actual is 1</td><td></td></tr>
+<tr><td>61</td><td>resumeBackgroundMusic</td><td>恢复背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>62</td><td>stopBackgroundMusic</td><td>停止背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>63</td><td>setHeadsetMonitorOn</td><td>监听控制:监听麦克风，监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>64</td><td>setHeadsetMonitorOn</td><td>监听控制：不监听麦克风，监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>65</td><td>setHeadsetMonitorOn</td><td>监听控制：不监听麦克风，不监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>66</td><td>setHeadsetMonitorOn</td><td>监听控制：监听麦克风，不监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>67</td><td>setReverbEnabled</td><td>开启主播混响模式</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>68</td><td>setReverbEnabled</td><td>关闭主播混响模式</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>69</td><td>setVadCallbackEnabled</td><td>开启语音检测回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>70</td><td>setVadCallbackEnabled</td><td>关闭语音检测回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>71</td><td>setMicLevelCallback</td><td>开启讲话音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>72</td><td>setMicLevelCallback</td><td>关闭讲话音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>73</td><td>setReleaseMicWhenMute</td><td>麦克风静音时，释放麦克风设备</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>74</td><td>setReleaseMicWhenMute</td><td>麦克风静音时，不释放麦克风设备</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>75</td><td>pauseChannel</td><td>暂停通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>76</td><td>resumeChannel</td><td>恢复通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>77</td><td>getSoundtouchPitchSemiTones</td><td>获取变声音调</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 206</td><td></td></tr>
+<tr><td>78</td><td>setSoundtouchPitchSemiTones</td><td>设置变声音调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>79</td><td>setOtherMicMute</td><td>控制他人麦克风，让用户静音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>80</td><td>回调:YOUME_EVENT_PAUSED</td><td>停止通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>81</td><td>setOtherMicMute</td><td>控制他人麦克风，取消用户静音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>82</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>83</td><td>setOtherSpeakerMute</td><td>控制他人扬声器，屏蔽他人语音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>84</td><td>回调：YOUME_EVENT_RESUMED</td><td>恢复通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>85</td><td>setOtherMicMute</td><td>控制他人扬声器，取消屏蔽他人语音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>86</td><td>sendMessage</td><td>发出广播消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>87</td><td>setWhiteUserList</td><td>对频道设置白名单用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>88</td><td>releaseMicSync</td><td>同步完成麦克风释放,成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>89</td><td>resumeMicSync</td><td>恢复麦克风到释放前的状态,成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>90</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>91</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>92</td><td>joinChannelMultiMode</td><td>多频道主播模式下离开房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>93</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>94</td><td>leaveChannelMultiMode</td><td>多频道模式下离开房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>95</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>96</td><td>LeaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>97</td><td>回调:YOUME_EVENT_LEAVED_ONE</td><td>离开一个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>98</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>99</td><td>joinChannelMultiMode</td><td>多频道模式下加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>100</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>101</td><td>joinChannelMultiMode(cb)</td><td></td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>102</td><td>消息接收成功</td><td>多频道模式下加入房间【Callback】</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>103</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>104</td><td>joinChannelMultiMode</td><td>多频道模式下加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>105</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>106</td><td>消息接收成功</td><td>多频道模式下加入房间【Callback】</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>107</td><td>speakToChannel</td><td>多频道模式下，选择一个频道说话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>108</td><td>回调:YOUME_EVENT_SPEAK_SUCCESS</td><td>切换对指定频道讲话成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>109</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>110</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>111</td><td>joinChannelSingleMode</td><td>以主播模式加入单个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>112</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>113</td><td>setGrabMicOption</td><td>抢麦设置</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>114</td><td>startGrabMicAction</td><td>开始抢麦活动</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>115</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>116</td><td>stopGrabMicAction</td><td>停止抢麦活动</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>117</td><td>回调：YOUME_EVENT_GRABMIC_NOTIFY_START</td><td>抢麦活动开始</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>118</td><td>回调：YOUME_EVENT_GRABMIC_START_OK</td><td>抢麦活动开始</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>119</td><td>回调：YOUME_EVENT_GRABMIC_NOTIFY_STOP</td><td>抢麦活动结束</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>120</td><td>回调：YOUME_EVENT_GRABMIC_STOP_OK</td><td>抢麦活动停止</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>121</td><td>startGrabMicAction</td><td>发起抢麦请求, 抢麦成功后是自动开启麦克风权限</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>122</td><td>releaseGrabMic</td><td>释放麦</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>123</td><td>startGrabMicAction</td><td>发起抢麦请求, 抢麦成功后是不自动开启麦克风权限</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>124</td><td>setInviteMicOption</td><td>主播连麦设置,参数为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>125</td><td>setInviteMicOption</td><td>主播连麦设置</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>126</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>127</td><td>setInviteMicOption</td><td>主播连麦设置，waitTimeout=-1， maxTalkTime=-1</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>128</td><td>requestInviteMic</td><td>主播与用户发起连麦请求，房间等参数为空值</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>129</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>130</td><td>requestInviteMic</td><td>主播与用户发起连麦请求，房间等参数不为空值</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>131</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>132</td><td>responseInviteMic</td><td>主播应答连麦请求，参数为true，同意连麦</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>133</td><td>回调：YOUME_EVENT_INVITEMIC_CAN_TALK</td><td>双方可以通话了，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>134</td><td>stopInviteMic</td><td>停止连麦请求</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>135</td><td>回调：YOUME_EVENT_INVITEMIC_CANNOT_TALK</td><td>通话停止回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+</table>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>测试报告</title>
+<h1>Report</h1>
+<h4>2018/11/09 13:19:10.6</h4>
+<h4>Android</h4>
+<h4>sysver:6.0.1
+</h4>
+<h4>ffmpeg-support:1
+</h4>
+<h4></h4>
+<h4>Brand:360
+</h4>
+<h4>sdkver:trunk-2.6.0.4884
+</h4>
+<h4>CPU:armeabi-v7a
+</h4>
+<h4>Model:1605-A01
+</h4>
+</head>
+<body>
+<table border="1.5"
+<tr><th> 序号 </th>
+<th> 接口名 </th>
+<th> 用例名 </th>
+<th> 测试结果 </th>
+<th> 备注 </th>
+</tr>
+<tr><td>1</td><td>unInit</td><td>反初始化</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>2</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>3</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>4</td><td>isInited</td><td>是否已经初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>5</td><td>joinChannelSingleMode</td><td>以自由角色、单频道模式加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>6</td><td>isInChannel</td><td>单频道模式查询是否在房间中，是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>7</td><td>getChannelUserList</td><td>单频道模式查询用户列表</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>8</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>9</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>10</td><td>setUserRole</td><td>设置用户说话时的角色</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>11</td><td>getUserRole</td><td>获取用户说话时的角色</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>12</td><td>leaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>13</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>14</td><td>joinChannelSingleMode</td><td>以主播模式加入单个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>15</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>16</td><td>leaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>17</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>18</td><td>joinChannelSingleMode</td><td>加入单个房间，用户参数传入空字符串</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>19</td><td>joinChannelSingleMode</td><td>加入单个房间，用户参数传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>20</td><td>joinChannelSingleMode</td><td>加入单个房间，房间参数传入空指针</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>21</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>22</td><td>getSpeakerMute</td><td>获取静音状态,关闭扬声器</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>23</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>24</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>25</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>26</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_ON</td><td>我方扬声器打开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>27</td><td>getSpeakerMute</td><td>设置静音状态，打开扬声器</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>28</td><td>setOutputToSpeaker</td><td>设置是否输出到扬声器:否</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>29</td><td>setOutputToSpeaker</td><td>设置是否输出到扬声器：是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>30</td><td>setMicrophoneMute</td><td>麦克风控制：关闭麦克风</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>31</td><td>setMicrophoneMute</td><td>麦克风控制：打开麦克风</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>32</td><td>setVolume</td><td>音量控制：设置音量为0，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>33</td><td>setVolume</td><td>音量控制：设置音量为100，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>34</td><td>setVolume</td><td>音量控制：设置音量为45，持续5s</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>35</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>36</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>37</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>38</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>39</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>40</td><td>setReverbEnabled</td><td>混响控制：打开混响</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>41</td><td>setAutoSendStatus</td><td>设置是否通知其他人自己的开关麦克风和扬声器的状态:是</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>42</td><td>setAutoSendStatus</td><td>设置是否通知其他人自己的开关麦克风和扬声器的状态:否</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>43</td><td>setUseMobileNetworkEnabled</td><td>启用移动网络</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>44</td><td>getUseMobileNetworkEnabled</td><td>获取移动网络状态，开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>45</td><td>setUseMobileNetworkEnabled</td><td>禁用移动网络</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>46</td><td>getUseMobileNetworkEnabled</td><td>获取移动网络状态，关</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>47</td><td>pauseChannel</td><td>通话控制：暂停通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>48</td><td>回调:YOUME_EVENT_PAUSED</td><td>停止通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>49</td><td>resumeChannel</td><td>通话控制：恢复通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>50</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_ON</td><td>我方扬声器打开</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>51</td><td>回调：YOUME_EVENT_RESUMED</td><td>恢复通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>52</td><td>playBackgroundMusic</td><td>背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>53</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>54</td><td>playingBackgroundMusic</td><td>背景音乐播放,正在播放</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 0</td><td></td></tr>
+<tr><td>55</td><td>setBackgroundMusicVolume</td><td>设置背景音乐音量</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>56</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>57</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>58</td><td>回调:YOUME_EVENT_BGM_FAILED</td><td>背景音乐播放失败</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is -102, But actual is 0</td><td></td></tr>
+<tr><td>59</td><td>pauseBackgroundMusic</td><td>暂停背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>60</td><td>noplayingBackgroundMusic</td><td>背景音乐播放,没有播放</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 0, But actual is 1</td><td></td></tr>
+<tr><td>61</td><td>resumeBackgroundMusic</td><td>恢复背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>62</td><td>stopBackgroundMusic</td><td>停止背景音乐播放</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>63</td><td>setHeadsetMonitorOn</td><td>监听控制:监听麦克风，监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>64</td><td>setHeadsetMonitorOn</td><td>监听控制：不监听麦克风，监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>65</td><td>setHeadsetMonitorOn</td><td>监听控制：不监听麦克风，不监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>66</td><td>setHeadsetMonitorOn</td><td>监听控制：监听麦克风，不监听背景音乐</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>67</td><td>setReverbEnabled</td><td>开启主播混响模式</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>68</td><td>setReverbEnabled</td><td>关闭主播混响模式</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>69</td><td>setVadCallbackEnabled</td><td>开启语音检测回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>70</td><td>setVadCallbackEnabled</td><td>关闭语音检测回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>71</td><td>setMicLevelCallback</td><td>开启讲话音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>72</td><td>setMicLevelCallback</td><td>关闭讲话音量回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>73</td><td>setReleaseMicWhenMute</td><td>麦克风静音时，释放麦克风设备</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>74</td><td>setReleaseMicWhenMute</td><td>麦克风静音时，不释放麦克风设备</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>75</td><td>pauseChannel</td><td>暂停通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>76</td><td>resumeChannel</td><td>恢复通话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>77</td><td>getSoundtouchPitchSemiTones</td><td>获取变声音调</td><td>	[        <font color="red">Failed</font>        ] ======= Expect is 1, But actual is 206</td><td></td></tr>
+<tr><td>78</td><td>setSoundtouchPitchSemiTones</td><td>设置变声音调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>79</td><td>setOtherMicMute</td><td>控制他人麦克风，让用户静音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>80</td><td>回调:YOUME_EVENT_PAUSED</td><td>停止通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>81</td><td>setOtherMicMute</td><td>控制他人麦克风，取消用户静音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>82</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>83</td><td>setOtherSpeakerMute</td><td>控制他人扬声器，屏蔽他人语音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>84</td><td>回调：YOUME_EVENT_RESUMED</td><td>恢复通话回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>85</td><td>setOtherMicMute</td><td>控制他人扬声器，取消屏蔽他人语音</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>86</td><td>sendMessage</td><td>发出广播消息</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>87</td><td>setWhiteUserList</td><td>对频道设置白名单用户</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>88</td><td>releaseMicSync</td><td>同步完成麦克风释放,成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>89</td><td>resumeMicSync</td><td>恢复麦克风到释放前的状态,成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>90</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>91</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>92</td><td>joinChannelMultiMode</td><td>多频道主播模式下离开房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>93</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>94</td><td>leaveChannelMultiMode</td><td>多频道模式下离开房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>95</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>96</td><td>LeaveChannelAll</td><td>离开所有房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>97</td><td>回调:YOUME_EVENT_LEAVED_ONE</td><td>离开一个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>98</td><td>回调：YOUME_EVENT_LEAVED_ALL</td><td>离开所有房间回调;</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>99</td><td>joinChannelMultiMode</td><td>多频道模式下加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>100</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>101</td><td>joinChannelMultiMode(cb)</td><td></td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>102</td><td>消息接收成功</td><td>多频道模式下加入房间【Callback】</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>103</td><td>joinChannelMultiMode</td><td>多频道模式下加入房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>104</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>105</td><td>消息接收成功</td><td>多频道模式下加入房间【Callback】</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>106</td><td>speakToChannel</td><td>多频道模式下，选择一个频道说话</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>107</td><td>回调:YOUME_EVENT_SPEAK_SUCCESS</td><td>切换对指定频道讲话成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>108</td><td>init</td><td>初始化Talk引擎</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>109</td><td>初始化成功回调</td><td>初始化成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>110</td><td>joinChannelSingleMode</td><td>以主播模式加入单个房间</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>111</td><td>回调：YOUME_EVENT_LOCAL_SPEAKER_OFF</td><td>我方扬声器关闭</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>112</td><td>setGrabMicOption</td><td>抢麦设置</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>113</td><td>startGrabMicAction</td><td>开始抢麦活动</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>114</td><td>YOUME_EVENT_JOIN_OK</td><td>加入房间成功</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>115</td><td>stopGrabMicAction</td><td>停止抢麦活动</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>116</td><td>回调：YOUME_EVENT_GRABMIC_STOP_OK</td><td>抢麦活动停止</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>117</td><td>startGrabMicAction</td><td>发起抢麦请求, 抢麦成功后是自动开启麦克风权限</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>118</td><td>releaseGrabMic</td><td>释放麦</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>119</td><td>startGrabMicAction</td><td>发起抢麦请求, 抢麦成功后是不自动开启麦克风权限</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>120</td><td>setInviteMicOption</td><td>主播连麦设置,参数为空</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>121</td><td>setInviteMicOption</td><td>主播连麦设置</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>122</td><td>回调：YOUME_EVENT_GRABMIC_NOTIFY_START</td><td>抢麦活动开始</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>123</td><td>回调：YOUME_EVENT_GRABMIC_START_OK</td><td>抢麦活动开始</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>124</td><td>setInviteMicOption</td><td>主播连麦设置，waitTimeout=-1， maxTalkTime=-1</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>125</td><td>requestInviteMic</td><td>主播与用户发起连麦请求，房间等参数为空值</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>126</td><td>requestInviteMic</td><td>主播与用户发起连麦请求，房间等参数不为空值</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>127</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>128</td><td>responseInviteMic</td><td>主播应答连麦请求，参数为true，同意连麦</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>129</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>130</td><td>回调：YOUME_EVENT_INVITEMIC_SETOPT_OK</td><td>连麦设置成功，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>131</td><td>回调：YOUME_EVENT_INVITEMIC_CAN_TALK</td><td>双方可以通话了，回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>132</td><td>stopInviteMic</td><td>停止连麦请求</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+<tr><td>133</td><td>回调：YOUME_EVENT_INVITEMIC_CANNOT_TALK</td><td>通话停止回调</td><td>	[        <font color="green">OK</font>           ]</td><td></td></tr>
+</table>
+</body>
